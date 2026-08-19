@@ -1,0 +1,12 @@
+# Dataset (usually too large / provided separately)
+flights.csv
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
