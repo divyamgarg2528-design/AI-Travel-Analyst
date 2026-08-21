@@ -13,9 +13,7 @@ HOW TO USE:
 2. Run: python explore_flights.py
 3. Charts will be saved into the 'charts/' folder.
 
-Make sure you actually read every line here and understand it -
-you'll need to explain this in the interview!
-"""
+
 
 from __future__ import annotations
 
