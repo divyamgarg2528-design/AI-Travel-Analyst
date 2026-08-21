@@ -11,7 +11,7 @@ drivers of price and turn them into practical recommendations for travelers.
 
 ## Installation Instructions
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/divyamgarg2528-design/AI-Travel-Analyst.git
 cd ai-travel-analyst
 pip install -r requirements.txt
 python explore_flights.py
@@ -68,12 +68,8 @@ python explore_flights.py
   than number of stops when trying to save money — comparing budget vs.
   premium carriers on the same route is likely to save more than
   avoiding a layover.
-- **Travel class:** *(fill in after reviewing `6_price_by_travel_class.png`
-  — e.g. does First/Business command a clear premium over Economy in
-  this dataset?)*
-- **Booking lead time:** *(fill in after reviewing
-  `7_price_vs_days_before_departure.png` — e.g. does booking further in
-  advance actually lower price, or is the relationship weak here?)*
+- **Travel class:**First and Business have similar median prices (~₹150–180k) and are clearly higher than Premium Economy and Economy. Economy has the lowest   median (~₹40k). But there's heavy overlap — every class has outliers stretching up toward ₹1,000,000, so travel class shifts the typical price but doesn't cleanly separate it.
+- **Booking lead time:**No real trend. There's a dense, flat band of budget-priced flights (under ~₹200k) spread evenly across the entire 0–180 day range — booking early or late doesn't move that price band at all. There's also a scattered cluster of expensive flights (₹300k+) that's noticeably denser in the 0–50 day range and thins out further out — so premium/international bookings appear more concentrated closer to departure, but this isn't a "book early to save money" pattern; if anything it's closer to the opposite.
 
 ## Challenges Faced
 - The `Price` column was stored as text with a currency prefix and
