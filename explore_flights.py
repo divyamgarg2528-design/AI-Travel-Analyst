@@ -231,9 +231,9 @@ if "Days_Before_Departure" in df.columns:
 print(f"\nCharts saved to '{OUTPUT_DIR}/' folder.")
 
 # ----------------------------------------------------------------------
-# STEP 5: PRINT KEY INSIGHTS (fill these in based on YOUR actual results)
+# STEP 5: PRINT KEY INSIGHTS 
 # ----------------------------------------------------------------------
-print("\n--- INSIGHTS (edit this section after reviewing your charts) ---")
+print("\n--- INSIGHTS )
 
 # Columns to correlate against Price - add more here if you engineer
 # other numeric features later.
