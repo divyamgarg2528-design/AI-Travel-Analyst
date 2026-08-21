@@ -256,17 +256,10 @@ for col in CORR_COLUMNS:
         print(f"Correlation between {col} and price: {corr:.2f}")
         summary_lines.append(line)
 
-# Save the key numeric findings to a text file so they're preserved
-# outside the terminal - useful for your README and for the interview.
+
 summary_path = os.path.join(OUTPUT_DIR, "summary.txt")
 with open(summary_path, "w", encoding="utf-8") as f:
     f.write("\n".join(summary_lines) + "\n")
 print(f"\nSummary saved to '{summary_path}'.")
 
-print("""
-TODO for you:
-- Look at each chart in the 'charts' folder.
-- Write 3-5 sentences per chart about what it shows.
-- Note which factors seem to matter most for price (airline? stops? route?).
-- Turn these into 'recommendations' for travelers in your README.
-""")
+
